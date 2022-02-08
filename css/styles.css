@@ -3,6 +3,7 @@
   --font-color: #242A45;
   --bg-color-blue: #5267DF;
   --bg-color-red:#FA5959;
+  --primary-color: #fff;
 }
 /* FONTS */
 @font-face {
@@ -40,13 +41,34 @@ body{
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   color: var(--font-color);
 }
 img{
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   object-fit: cover;
+}
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-color);
+  background-color: var(--bg-color-red);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid var(--bg-color-red);
+  transition: background-color 0.4s ease, color 0.4s ease, opacity 0.4s ease, border-color 0.4s ease;
+}
+.button:hover{
+  color: var(--bg-color-red);
+  border-color: var(--bg-color-red);
+  background-color: var(--primary-color);
+}
+.button:active{
+  opacity: 0.8;
 }
 
 /* CONTAINER  */
@@ -62,4 +84,61 @@ img{
 /* MAIN CONTENT  */
 .main-content{
   flex-grow: 1;
+}
+
+/* SITE-HEADER */
+.site-header {
+  margin-bottom: 68px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: transparent;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.site-logo-link {
+  display: flex;
+  transition: opacity 0.4s ease;
+}
+.site-logo-link:hover{
+  opacity: 0.8;
+}
+.site-logo-link:active{
+  opacity: 0.6;
+}
+.site-logo-img {
+  width: 150px;
+  height: 25px;
+}
+.sitenav-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: 48px;
+  padding: 0;
+  list-style: none;
+}
+.sitenav-item:not(:last-child) {
+  margin-right: 46px;
+}
+.sitenav-item-link {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: var(--font-color);
+  text-decoration: none;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.sitenav-item-link:hover{
+  color: var(--bg-color-red);
+}
+.sitenav-item-link:active{
+  opacity: 0.6;
+}
+
+.header-button {
+  padding-right: 32px;
+  padding-left: 32px;
 }
