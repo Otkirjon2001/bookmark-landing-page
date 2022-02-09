@@ -72,6 +72,19 @@ img{
 .button:active{
   opacity: 0.8;
 }
+.heading{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+}
+.theme{
+  max-width: 540px;
+  width: 100%;
+  opacity: 0.5;
+  text-align: center;
+}
 
 /* CONTAINER  */
 .container{
@@ -218,18 +231,10 @@ img{
 .features-heading {
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-  letter-spacing: -0.1px;
-}
+ }
 .features-theme {
   margin-top: 0;
   margin-bottom: 72px;
-  max-width: 540px;
-  width: 100%;
-  opacity: 0.5;
-  text-align: center;
 }
 .features-list {
   display: flex;
@@ -330,18 +335,10 @@ img{
 .download-heading {
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-  letter-spacing: -0.1px;
 }
 .download-theme {
-  max-width: 540px;
-  width: 100%;
   margin-top: 0;
   margin-bottom: 48px;
-  opacity: 0.5;
-  text-align: center;
 }
 .download-list {
   display: flex;
@@ -393,6 +390,58 @@ img{
   border-color: var(--bg-color-blue);
 }
 .download-item-button:hover{
+  border-color: var(--bg-color-blue);
+  color: var(--bg-color-blue);
+}
+
+/* QUESTIONS */
+.question {
+  margin-bottom: 150px;
+}
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.questions-theme {
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+.questions-form {
+  margin-bottom: 54px;
+}
+.questions-select{
+  display: block;
+  max-width: 540px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  line-height: 32px;
+  color: var(--font-color);
+  border: 0;
+  border-top: 1px solid rgba(36, 42, 69, 0.15);
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.questions-select:hover{
+  color: var(--bg-color-red);
+}
+.questions-select:last-child{
+  border-bottom: 1px solid rgba(36, 42, 69, 0.15);
+}
+.questions-option {
+  display: block;
+  width: 300px;
+}
+.questions-button {
+  background-color: var(--bg-color-blue);
+  border-color: var(--bg-color-blue);
+}
+.questions-button:hover{
   border-color: var(--bg-color-blue);
   color: var(--bg-color-blue);
 }
