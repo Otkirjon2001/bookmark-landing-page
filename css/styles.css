@@ -27,6 +27,7 @@ html{
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *,*::after,*::before{
   box-sizing: border-box;
@@ -144,14 +145,15 @@ img{
 
 /* HERO */
 .hero {
-}
-.container {
+  margin-bottom: 80px;
 }
 .hero-container {
   display: flex;
+  position: relative;
+  z-index: 40;
 }
 .hero-content {
-  padding-top: 120px;
+  padding-top: 65px;
 }
 .hero-heading {
   margin-top: 0;
@@ -166,13 +168,37 @@ img{
   margin-bottom: 32px;
   opacity: 0.5;
 }
-.button-box {
-}
-.button {
-}
 .hero-button {
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: var(--bg-color-blue);
+  border-color: var(--bg-color-blue);
+}
+.hero-button:hover{
+  background-color: var(--primary-color);
+  border-color: var(--bg-color-blue);
+  color: var(--bg-color-blue);
+}
+.hero-button:nth-child(2){
+  margin-left: 16px;
+  background-color: #F7F7F7;
+  color: var(--font-color);
+  border-color: #F7F7F7;
+}
+.hero-button:nth-child(2):hover{
+  border-color: var(--font-color);
+  color: var(--font-color);
+}
+.hero-img-box{
+  margin-right: -90px;
 }
 .hero-img {
+  width: 659px;
+  height: 466px;
 }
 .hero-bg-img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: -100px;
 }
