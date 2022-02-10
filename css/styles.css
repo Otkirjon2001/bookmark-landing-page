@@ -498,3 +498,40 @@ img{
 .be-aware-button:hover{
   border-color: var(--bg-color-red);
 }
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color:var(--font-color);
+}
+.footer-container {
+  display: flex;
+}
+.footer-sitenav-list {
+  margin-left: 65px;
+  justify-content: start;
+}
+.sitenav-item-link {
+  color: var(--primary-color);
+}
+.social-media-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-media-item:not(:last-child) {
+  margin-right: 40px;
+}
+.social-media-item-link {
+  display: flex;
+  color: var(--primary-color);
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.social-media-item-link:hover{
+  color: var(--bg-color-red);
+}
+.social-media-item-link:active{
+  opacity: 0.6;
+}
