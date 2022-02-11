@@ -50,6 +50,9 @@ img{
   height: auto;
   object-fit: cover;
 }
+.none{
+  display: none;
+}
 .button {
   display: inline-block;
   padding: 10px 24px;
@@ -204,7 +207,7 @@ img{
   border-color: #F7F7F7;
 }
 .hero-button:nth-child(2):hover{
-  border-color: var(--font-color);
+  border-color: #5B6074;
   color: var(--font-color);
 }
 .hero-img-box{
@@ -246,44 +249,39 @@ img{
   max-width: 730px;
   width: 100%;
   margin: 0;
+  margin-bottom: 72px;
   padding: 0;
   list-style: none;
+  border-bottom: 1px solid #495DCF33;
 }
 .features-item {
   margin: 0;
-  padding-left: 41px;
-  padding-right: 41px;
-  padding-bottom: 27px;
-  border-bottom: 2px solid var(--primary-color);
 }
 .features-item:first-child{
   border-bottom-color: var(--bg-color-red);
 }
-.features-item-link {
+.features-item-button {
+  min-width: 243px;
+  padding-bottom: 27px;
   font-size: 16px;
   line-height: 17px;
-  text-decoration: none;
   letter-spacing: 0.533333px;
   color: var(--font-color);
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
   transition: color 0.4s ease, opacity 0.4s ease;
+  white-space: nowrap;
 }
-.features-item-link:hover{
+.border-bottom{
+  border-bottom-color: var(--bg-color-red);
+}
+.features-item-button:hover{
   color: var(--bg-color-red);
 }
-.features-item-link:active{
+.features-item-button:active{
   opacity: 0.8;
-}
-/* .features-item-link:active .features-item{
-  border-bottom-color: var(--bg-color-red);
-} */
-.features-hr{
-  max-width: 730px;
-  width: 100%;
-  height: 1px;
-  margin: 0;
-  margin-bottom: 72px;
-  border: 0;
-  border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
 }
 .features-wrapper-box {
   width: 100%;
@@ -291,9 +289,8 @@ img{
   align-items: center;
   justify-content: space-between;
 }
-.features-img {
-  width: 536px;
-  height: 346px;
+.none{
+  display: none;
 }
 .features-bg-img {
   position: absolute;
@@ -329,6 +326,14 @@ img{
   color: var(--bg-color-blue);
   border-color: var(--bg-color-blue);
 }
+/* FEATURES-WRAPPER-BOX-2 */
+.features-wrapper-box-2 .features-bg-img{
+  bottom: -42px;
+}
+/* FEATURES-WRAPPER-BOX-2 */
+.features-wrapper-box-3 .features-bg-img{
+  bottom: -55px;
+}
 
 /* DOWNLOAD */
 .download-container {
@@ -358,6 +363,9 @@ img{
   flex-direction: column;
   align-items: center;
   padding: 50px 24px 24px 24px;
+  background-image: url("../imgs/circles.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom 96px;
   box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
   border-radius: 15px;
 }
