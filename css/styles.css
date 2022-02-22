@@ -214,14 +214,17 @@ img{
   margin-right: -90px;
 }
 .hero-img {
-  width: 659px;
-  height: 466px;
+  width: 579px;
+  height: 386px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 .hero-bg-img {
   position: absolute;
   z-index: -1;
-  bottom: 0;
-  right: -100px;
+  bottom: -100px;
+  right: -597px;
+  width: 1000px;
+  height: 352px;
 }
 
 /* FEATURES */
@@ -238,7 +241,7 @@ img{
 .features-heading {
   margin-top: 0;
   margin-bottom: 16px;
- }
+}
 .features-theme {
   margin-top: 0;
   margin-bottom: 72px;
@@ -295,8 +298,10 @@ img{
 .features-bg-img {
   position: absolute;
   z-index: -1;
-  left: -120px;
+  left: -471px;
   bottom: -90px;
+  width: 1000px;
+  height: 352px;
   transform: rotate(180deg);
 }
 .features-content {
@@ -329,10 +334,12 @@ img{
 /* FEATURES-WRAPPER-BOX-2 */
 .features-wrapper-box-2 .features-bg-img{
   bottom: -42px;
+  left: -571px;
 }
 /* FEATURES-WRAPPER-BOX-2 */
 .features-wrapper-box-3 .features-bg-img{
   bottom: -55px;
+  left: -560px;
 }
 
 /* DOWNLOAD */
