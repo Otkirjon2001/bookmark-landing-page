@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="container header-container">
       <a class="site-logo-link" href="#" >
-        <img class="site-logo-img" src="imgs/site-logo.svg" width="150" height="25" alt="site logo" >
+        <img class="site-logo-img" src="imgs/site-logo.svg" alt="site logo" width="150" height="25"  >
       </a>
       <ul class="sitenav-list">
         <li class="sitenav-item">
@@ -32,7 +32,7 @@
       <a  class="button header-button" href="#">LOGIN</a>
     </div>
   </header>
-
+  <!-- MAIN-CONTENT -->
   <main class="main-content">
     <!-- HERO-SECTION -->
     <section class="hero">
@@ -58,19 +58,19 @@
         <p class="features-theme theme">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         <ul class="features-list">
           <li class="features-item">
-            <button id="features-item-button-1" class="features-item-button border-bottom" type="button">Simple Bookmarking</button>
+            <button class="features-item-button border-bottom" id="features-item-button-1"  type="button">Simple Bookmarking</button>
           </li>
           <li class="features-item">
-            <button id="features-item-button-2" class="features-item-button" type="button">Speedy Searching</button>
+            <button class="features-item-button" id="features-item-button-2"  type="button">Speedy Searching</button>
           </li>
           <li class="features-item">
-            <button id="features-item-button-3" class="features-item-button" type="button">Easy Sharing</button>
+            <button class="features-item-button" id="features-item-button-3"  type="button">Easy Sharing</button>
           </li>
         </ul>
         <div class="features-wrapper-box features-wrapper-box-1">
           <div class="features-img-box">
-            <img class="features-img" src="imgs/simple-bookmarking-img.svg" width="536" height="346" alt="" >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" width="1000" height="352" alt="" >
+            <img class="features-img" src="imgs/simple-bookmarking-img.svg" alt=""  width="536" height="346" >
+            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
           </div>
           <div class="features-content">
             <h3 class="features-content-heading">Bookmark in one click</h3>
@@ -80,8 +80,8 @@
         </div>
         <div class="features-wrapper-box features-wrapper-box-2 none">
           <div class="features-img-box">
-            <img class="features-img" src="imgs/search.svg" width="468" height="393" alt="" >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" width="1000" height="352" alt="" >
+            <img class="features-img" src="imgs/search.svg" alt="" width="468" height="393"  >
+            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
           </div>
           <div class="features-content">
             <h3 class="features-content-heading">Intelligent search</h3>
@@ -91,8 +91,8 @@
         </div>
         <div class="features-wrapper-box features-wrapper-box-3 none">
           <div class="features-img-box">
-            <img class="features-img" src="imgs/easy-sharing-img.svg" width="440" height="380" alt="" >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" width="1000" height="352" alt="" >
+            <img class="features-img" src="imgs/easy-sharing-img.svg" alt="" width="440" height="380"  >
+            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
           </div>
           <div class="features-content">
             <h3 class="features-content-heading">Share your bookmarks</h3>
@@ -109,19 +109,19 @@
         <p class="download-theme theme">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
         <ul class="download-list">
           <li class="download-item">
-            <img class="download-item-img" src="imgs/chrome.svg" width="102" height="100" alt="chrome" >
+            <img class="download-item-img" src="imgs/chrome.svg" alt="chrome" width="102" height="100"  >
             <h3 class="download-item-heading">Add to Chrome</h3>
             <p class="download-item-text">Minimum version 62</p>
             <a  class="button download-item-button" href="#">Add & Install Extension</a>
           </li>
           <li class="download-item">
-            <img class="download-item-img" src="imgs/firefox.svg" width="105" height="100" alt="firefox" >
+            <img class="download-item-img" src="imgs/firefox.svg" alt="firefox" width="105" height="100"  >
             <h3 class="download-item-heading">Add to Firefox</h3>
             <p class="download-item-text">Minimum version 55</p>
             <a  class="button download-item-button" href="#">Add & Install Extension</a>
           </li>
           <li class="download-item">
-            <img class="download-item-img" src="imgs/opera.svg" width="96" height="100" alt="opera" >
+            <img class="download-item-img" src="imgs/opera.svg" alt="opera" width="96" height="100"  >
             <h3 class="download-item-heading">Add to Opera</h3>
             <p class="download-item-text">Minimum version 46</p>
             <a  class="button download-item-button" href="#">Add & Install Extension</a>
@@ -166,18 +166,17 @@
         <h2 class="be-aware-heading heading">Stay up-to-date with what
           we’re doing</h2>
         <form class="be-aware-form" action="https://echo.htmlacademy.ru" method="post" >
-          <input class="be-aware-input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email address" required >
+          <input class="be-aware-input" type="email" name="user email" placeholder="Enter your email address" aria-label="Enter your email address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required >
           <button class="button be-aware-button" type="submit">Contact Us</button>
         </form>
       </div>
     </section>
   </main>
-
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-container">
       <a class="site-logo-link" href="#" >
-        <img class="site-logo-img" src="imgs/footer-logo.svg" width="150" height="25" alt="site logo" >
+        <img class="site-logo-img" src="imgs/footer-logo.svg" alt="site logo" width="150" height="25"  >
       </a>
       <ul class="sitenav-list footer-sitenav-list">
         <li class="sitenav-item">
