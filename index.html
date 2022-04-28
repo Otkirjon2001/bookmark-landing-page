@@ -52,151 +52,142 @@
     </section>
     <!-- FEATURES-SECTION -->
     <section class="features">
-      <div class="container features-container">
-        <h2 class="features-heading heading">Features</h2>
-        <p class="features-theme theme">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-        <ul class="features-list">
-          <li class="features-item">
-            <button class="features-item-button border-bottom" id="features-item-button-1"  type="button">Simple Bookmarking</button>
+      <div class="container features__container">
+        <h2 class="features__heading heading">Features</h2>
+        <p class="features__theme theme">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <button class="features__button features__button--active" id="features-item-button-1"  type="button">Simple Bookmarking</button>
           </li>
-          <li class="features-item">
-            <button class="features-item-button" id="features-item-button-2"  type="button">Speedy Searching</button>
+          <li class="features__item">
+            <button class="features__button" id="features-item-button-2"  type="button">Speedy Searching</button>
           </li>
-          <li class="features-item">
-            <button class="features-item-button" id="features-item-button-3"  type="button">Easy Sharing</button>
+          <li class="features__item">
+            <button class="features__button" id="features-item-button-3"  type="button">Easy Sharing</button>
           </li>
         </ul>
-        <div class="features-wrapper-box features-wrapper-box-1">
-          <div class="features-img-box">
-            <img class="features-img" src="imgs/simple-bookmarking-img.svg" alt=""  width="536" height="346" >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
+        <div class="tabs">
+          <div class="tabs__box features-wrapper-box-1">
+            <img class="tabs__img" src="imgs/simple-bookmarking-img.svg" alt=""  width="536" height="346" >
+            <div class="tabs__content">
+              <h3 class="tabs__heading">Bookmark in one click</h3>
+              <p class="tabs__content-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+              <a  class="button tabs__button" href="#">More Info</a>
+            </div>
           </div>
-          <div class="features-content">
-            <h3 class="features-content-heading">Bookmark in one click</h3>
-            <p class="features-content-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            <a  class="button features-button" href="#">More Info</a>
+          <div class="tabs__box features-wrapper-box-2 none">
+            <img class="tabs__img" src="imgs/search.svg" alt="" width="468" height="393"  >
+            <div class="tabs__content">
+              <h3 class="tabs__heading">Intelligent search</h3>
+              <p class="tabs__content-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+              <a  class="button tabs__button" href="#">More Info</a>
+            </div>
           </div>
-        </div>
-        <div class="features-wrapper-box features-wrapper-box-2 none">
-          <div class="features-img-box">
-            <img class="features-img" src="imgs/search.svg" alt="" width="468" height="393"  >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
-          </div>
-          <div class="features-content">
-            <h3 class="features-content-heading">Intelligent search</h3>
-            <p class="features-content-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-            <a  class="button features-button" href="#">More Info</a>
-          </div>
-        </div>
-        <div class="features-wrapper-box features-wrapper-box-3 none">
-          <div class="features-img-box">
-            <img class="features-img" src="imgs/easy-sharing-img.svg" alt="" width="440" height="380"  >
-            <img class="features-bg-img"  src="imgs/rectangle.svg" alt="" width="1000" height="352"  >
-          </div>
-          <div class="features-content">
-            <h3 class="features-content-heading">Share your bookmarks</h3>
-            <p class="features-content-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-            <a  class="button features-button" href="#">More Info</a>
+          <div class="tabs__box features-wrapper-box-3 none">
+            <img class="tabs__img" src="imgs/easy-sharing-img.svg" alt="" width="440" height="380"  >
+            <div class="tabs__content">
+              <h3 class="tabs__heading">Share your bookmarks</h3>
+              <p class="tabs__content-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+              <a  class="button tabs__button" href="#">More Info</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- DOWNLOAD-SECTION -->
     <section class="download">
-      <div class="container download-container">
-        <h2 class="download-heading heading">Download the extension</h2>
-        <p class="download-theme theme">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
-        <ul class="download-list">
-          <li class="download-item">
-            <img class="download-item-img" src="imgs/chrome.svg" alt="chrome" width="102" height="100"  >
-            <h3 class="download-item-heading">Add to Chrome</h3>
-            <p class="download-item-text">Minimum version 62</p>
-            <a  class="button download-item-button" href="#">Add & Install Extension</a>
+      <div class="container download__container">
+        <h2 class="download__heading heading">Download the extension</h2>
+        <p class="download__theme theme">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        <ul class="download__list">
+          <li class="download__item extension">
+            <img class="extension__img" src="imgs/chrome.svg" alt="chrome" width="102" height="100"  >
+            <h3 class="extension__heading">Add to Chrome</h3>
+            <p class="extension__version">Minimum version 62</p>
+            <a  class="button extension__button" href="#">Add & Install Extension</a>
           </li>
-          <li class="download-item">
-            <img class="download-item-img" src="imgs/firefox.svg" alt="firefox" width="105" height="100"  >
-            <h3 class="download-item-heading">Add to Firefox</h3>
-            <p class="download-item-text">Minimum version 55</p>
-            <a  class="button download-item-button" href="#">Add & Install Extension</a>
+          <li class="download__item extension">
+            <img class="extension__img" src="imgs/firefox.svg" alt="firefox" width="105" height="100"  >
+            <h3 class="extension__heading">Add to Firefox</h3>
+            <p class="extension__version">Minimum version 55</p>
+            <a  class="button extension__button" href="#">Add & Install Extension</a>
           </li>
-          <li class="download-item">
-            <img class="download-item-img" src="imgs/opera.svg" alt="opera" width="96" height="100"  >
-            <h3 class="download-item-heading">Add to Opera</h3>
-            <p class="download-item-text">Minimum version 46</p>
-            <a  class="button download-item-button" href="#">Add & Install Extension</a>
+          <li class="download__item extension">
+            <img class="extension__img" src="imgs/opera.svg" alt="opera" width="96" height="100"  >
+            <h3 class="extension__heading">Add to Opera</h3>
+            <p class="extension__version">Minimum version 46</p>
+            <a  class="button extension__button" href="#">Add & Install Extension</a>
           </li>
         </ul>
       </div>
     </section>
     <!--QUESTIONS-SECTION -->
     <section class="question">
-      <div class="question-container">
-        <h2 class="question-heading heading">Frequently Asked Questions</h2>
-        <p class="questions-theme theme">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-        <form class="questions-form">
-          <select class="questions-select">
-              <option class="questions-option" selected disabled>What is Bookmark?</option>
-              <option class="questions-option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
+      <div class="question__container">
+        <h2 class="question__heading heading">Frequently Asked Questions</h2>
+        <p class="questions__theme theme">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        <form class="questions__form basic-questions">
+          <select class="basic-questions__select">
+              <option class="basic-questions__option" selected disabled>What is Bookmark?</option>
+              <option class="basic-questions__option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
           </select>
-          <select class="questions-select">
-            <option class="questions-option" selected disabled>How can I request a new browser?</option>
-            <option class="questions-option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
+          <select class="basic-questions__select">
+            <option class="basic-questions__option" selected disabled>How can I request a new browser?</option>
+            <option class="basic-questions__option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
           </select>
-          <select class="questions-select">
-            <option class="questions-option" selected disabled>Is there a mobile app?</option>
-            <option class="questions-option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
+          <select class="basic-questions__select">
+            <option class="basic-questions__option" selected disabled>Is there a mobile app?</option>
+            <option class="basic-questions__option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
           </select>
-          <select class="questions-select">
-            <option class="questions-option" selected disabled>What about other Chromium browsers?</option>
-            <option class="questions-option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-              ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
+          <select class="basic-questions__select">
+            <option class="basic-questions__option" selected disabled>What about other Chromium browsers?</option>
+            <option class="basic-questions__option" >Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</option>
           </select>
         </form>
-        <a  class="button questions-button" href="#">More Info</a>
+        <a  class="button basic-questions__button" href="#">More Info</a>
       </div>
     </section>
     <!-- BE AWARE-SECTION -->
     <section class="be-aware">
-      <div class="container be-aware-container">
-        <p class="be-aware-theme">35,000+ ALREADY JOINED</p>
-        <h2 class="be-aware-heading heading">Stay up-to-date with what
+      <div class="container be-aware__container">
+        <p class="be-aware__theme">35,000+ ALREADY JOINED</p>
+        <h2 class="be-aware__heading heading">Stay up-to-date with what
           we’re doing</h2>
-        <form class="be-aware-form" action="https://echo.htmlacademy.ru" method="post" >
-          <input class="be-aware-input" type="email" name="user email" placeholder="Enter your email address" aria-label="Enter your email address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required >
-          <button class="button be-aware-button" type="submit">Contact Us</button>
+        <form class="be-aware__form" action="https://echo.htmlacademy.ru" method="post" >
+          <input class="be-aware__input" type="email" name="user email" placeholder="Enter your email address" aria-label="Enter your email address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required >
+          <button class="button be-aware__button" type="submit">Contact Us</button>
         </form>
       </div>
     </section>
   </main>
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-container">
-      <a class="site-logo-link" href="#" >
-        <img class="site-logo-img" src="imgs/footer-logo.svg" alt="site logo" width="150" height="25"  >
+    <div class="container site-footer__container">
+      <a class="site-footer__logo logo" href="#" >
+        <img class="logo__img" src="imgs/footer-logo.svg" alt="site logo" width="150" height="25"  >
       </a>
-      <ul class="sitenav-list footer-sitenav-list">
-        <li class="sitenav-item">
-          <a  class="sitenav-item-link" href="#">FEATURES</a>
-        </li>
-        <li class="sitenav-item">
-          <a  class="sitenav-item-link" href="#">PRICING</a>
-        </li>
-        <li class="sitenav-item">
-          <a  class="sitenav-item-link" href="#">CONTACT</a>
-        </li>
-      </ul>
-      <ul class="social-media-list">
-        <li class="social-media-item">
-          <a  class="social-media-item-link" href="#">
-            <svg class="social-media-item-img" width="24" height="24"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" fill="Currentcolor"/></svg>
+      <nav class="site-footer__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#" >FEATURES</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#" >PRICING</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#" >CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="site-footer__socials-list socials-media">
+        <li class="socials-media__item">
+          <a  class="socials-media__link" href="#">
+            <svg class="socials-media__img" width="24" height="24"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" fill="Currentcolor"/></svg>
           </a>
         </li>
-        <li class="social-media-item">
-          <a  class="social-media-item-link" href="#">
-            <svg class="social-media-item-img" width="24" height="20"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z" fill="Currentcolor"/></svg>
+        <li class="socials-media__item">
+          <a  class="socials-media__link" href="#">
+            <svg class="socials-media__img" width="24" height="20"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z" fill="Currentcolor"/></svg>
           </a>
         </li>
       </ul>

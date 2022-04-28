@@ -6,25 +6,25 @@ const elSiteFeatures2 = document.querySelector(".features-wrapper-box-2");
 const elSiteFeatures3 = document.querySelector(".features-wrapper-box-3");
 
 elSiteButton1.addEventListener("click", function() {
-  elSiteButton1.classList.add("border-bottom");
-  elSiteButton2.classList.remove("border-bottom");
-  elSiteButton3.classList.remove("border-bottom");
+  elSiteButton1.classList.add("features__button--active");
+  elSiteButton2.classList.remove("features__button--active");
+  elSiteButton3.classList.remove("features__button--active");
   elSiteFeatures1.classList.remove("none");
   elSiteFeatures2.classList.add("none");
   elSiteFeatures3.classList.add("none");
 })
 elSiteButton2.addEventListener("click", function() {
-  elSiteButton1.classList.remove("border-bottom");
-  elSiteButton2.classList.add("border-bottom");
-  elSiteButton3.classList.remove("border-bottom");
+  elSiteButton1.classList.remove("features__button--active");
+  elSiteButton2.classList.add("features__button--active");
+  elSiteButton3.classList.remove("features__button--active");
   elSiteFeatures1.classList.add("none");
   elSiteFeatures2.classList.remove("none");
   elSiteFeatures3.classList.add("none");
 })
 elSiteButton3.addEventListener("click", function() {
-  elSiteButton1.classList.remove("border-bottom");
-  elSiteButton2.classList.remove("border-bottom");
-  elSiteButton3.classList.add("border-bottom");
+  elSiteButton1.classList.remove("features__button--active");
+  elSiteButton2.classList.remove("features__button--active");
+  elSiteButton3.classList.add("features__button--active");
   elSiteFeatures1.classList.add("none");
   elSiteFeatures2.classList.add("none");
   elSiteFeatures3.classList.remove("none");
