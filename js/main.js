@@ -29,3 +29,6 @@ elSiteButton3.addEventListener("click", function() {
   elSiteFeatures2.classList.add("none");
   elSiteFeatures3.classList.remove("none");
 })
+
+const elsParagraph = document.querySelectorAll('p');
+console.log(elsParagraph.length);

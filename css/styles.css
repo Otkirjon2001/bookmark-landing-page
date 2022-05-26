@@ -46,12 +46,9 @@ body{
   background-color: var(--primary-color);
 }
 img{
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
   object-fit: cover;
-}
-.none{
-  display: none;
 }
 .button {
   display: inline-block;
@@ -88,6 +85,8 @@ img{
 .theme{
   max-width: 540px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.5;
@@ -251,9 +250,6 @@ img{
 .features__container {
   position: relative;
   z-index: 40;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .features__heading {
   margin-top: 0;
@@ -268,8 +264,7 @@ img{
   justify-content: space-around;
   max-width: 730px;
   width: 100%;
-  margin: 0;
-  margin-bottom: 72px;
+  margin: 0 auto 72px auto;
   padding: 0;
   border-bottom: 1px solid #495DCF33;
   list-style: none;
@@ -308,17 +303,9 @@ img{
 .tabs__box {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 115px;
-}
-.tabs__box:nth-child(1) .tabs__img{
-  margin-right: 120px;
-}
-.tabs__box:nth-child(2) .tabs__img{
-  margin-right: 118px;
-}
-.tabs__box:nth-child(3) .tabs__img{
-  margin-right: 146px;
 }
 .none{
   display: none;
@@ -326,6 +313,7 @@ img{
 .tabs__content {
   max-width: 445px;
   width: 100%;
+  margin-left: 50px;
 }
 .tabs__heading {
   margin-top: 0;
@@ -358,10 +346,10 @@ img{
 .download{
   margin-bottom: 150px;
 }
-.download__container {
+.download__container{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .download__heading {
   margin-top: 0;
@@ -443,11 +431,11 @@ img{
   margin-top: 0;
   margin-bottom: 16px;
 }
-.questions__theme {
+.question__theme {
   margin-top: 0;
   margin-bottom: 56px;
 }
-.questions__form {
+.question__form {
   margin-bottom: 54px;
 }
 .basic-questions__select{
@@ -474,11 +462,11 @@ img{
   display: block;
   width: 300px;
 }
-.basic-questions__button {
+.question__button {
   border-color: var(--bg-color-blue);
   background-color: var(--bg-color-blue);
 }
-.basic-questions__button:hover{
+.question__button:hover{
   border-color: var(--bg-color-blue);
   color: var(--bg-color-blue);
 }
