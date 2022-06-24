@@ -530,6 +530,9 @@ img{
   opacity: 0.75;
   letter-spacing: 0.15px;
 }
+.accordion__item-text:not(:last-child){
+  margin-bottom: 20px;
+}
 /* BE-AWARE */
 .be-aware {
   padding-top: 58px;
